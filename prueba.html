@@ -4,85 +4,130 @@
 <title>Mi Guia HTML</title>
 </head>
 <body>
-<h1>¡Hola Mundo! :)</h1>
-<h1>Introducción</h1>
-<p>Todo en HTML jala con "tags" de este tipo: "<"tagname">"content goes here..."<"/tagname">"
-siempre tiene un opening tag y un closing tag
-</p>
-<h1>!Doctype</h1>
-<p>!Doctype le dice a tu navegador como mostrar las páginas correctamente. Así se declara: "<"!DOCTYPE html">"</p>
-<h1>Editores</h1>
-<p>Existen varios editores, pero cualquier editor de texto jala. Solo no olvides de ponerlo en un archivo .html</p>
-<h1>Documentos HTML</h1>
-<p>Todos los documentos HTML tinen que tener el "<"!DOCTYPE html">", empezar con "<"html">" y terminar con "<"/html">" y, por supuesto, su parte visible: "<"body">" ... "<"/body">"<p>
-<h1>Headings</h1>
-<p>Los Headings son tags de los titulos y van del "h1" al "h6" dependiendo de su importancia</p>
-<h1>Parrafos</h1>
-<p>Para declarar un parrafo se usa el tag "p"</p>
-<h1>Ligas</h1>
-<p>Para declarar una liga de usa el tag "a" seguido del atributo "href"</p>
-<p>Puedes usar un link en imgenes, texto, etc... ej: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
-
-<h1>Imágenes</h1>
-<p>Para declarar una imagen se usa el tag "img" y puede tener los siguientes atributos: fuente "scr", texto alterno "alt, largo "width" y ancho "height"</p>
-<h1>Elementos de HTML</h1>
-<p>HTML tiene varios elementos como "html" el cual define el tipo de documento y se tiene que cerrar, "body" define lo que tendra el documento y se tiene que cerrar, y hay elementos de tipo "content" que los que contendra el documento, estos ultimo de como "p", "h2" y se tienen que cerrar.
-Es muy importante cerrar estos tags.
-Hay ciertos tipos de tags llamados "empty" los cuales no tienen contenido y no se tienen que cerrar el como el break("br"). A HTML le vale que uses mayúsculas, pero es mejor no usarlas.
-</p>
-<h1>Atributos</h1>
-<p>HTML puede tener atributos los cuales añaden información adicional sobre un elemento.
-Los at ributos siempre se especifican el los tags de inicio</p>
-<h1>Atributos</h1>
-<p>Los elementos de HTML pueden atributos, los cuales añaden informacion adicional al elemento. Los atributos simepre se especifican en el start tag. Los atributos se declacan de la suiguiente manera: name="value".</p>
-<p>Ejemplos de atributos:</p>
-<ul>
-<li>lang: es el idioma ej: &lt;html lang="en-US"&gt; </li>
-<li>title: sale como tooltip cuando pasas el mouse como parrafo ej: &lt;p title="I'm a tooltip"&gt;.</li>
-<li>href: es la referencia hacia un link ej: &lt;a href="https://www.w3schools.com"&gt;</li>
-<li>src: es para la fuente de un imagen</li>
-<li>width: es para el ancho de una imagen</li>
-<li>height: es para le largo imagen</li>
-<li>Ej: &lt;img src="w3schools.jpg" width="104" height="142" &gt; </li>
-<li>para el ancho y el largo la medida el en pixeles</li>
-<li>alt: es la descripción de la imagen, además se muestra en caso de que la imagen mo se pueda mostrar este texto aparecera ej: &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&dt;</li>
-<li>alt	Specifies an alternative text for an image, when the image cannot be displayed
-disabled	Specifies that an input element should be disabled
-href	Specifies the URL (web address) for a link
-id	Specifies a unique id for an element
-src	Specifies the URL (web address) for an image
-style	Specifies an inline CSS style for an element
-title	Specifies extra information about an element (displayed as a tool tip)</li>
-</ul>
-<h1>Headings</h1>
-<h2>Horizontal Rules</h2>
-<p>hr: es un break tematico ej: &lt;hr&gt;</p>
-<p>head: es para contener metadata se usa como &lt;head&gt;. en el usualmente se define el titulo del documento, le tipo de los caracteres, los coleres entre otras cosas</p>
-<h1>Parrafos</h1>
-<h2>El elemento pre</h2>
-<pre>
-Es el elemento preformateado.
-Esta hecho para conservar espacios y saltos de linea.
-</pre>
-<h1>Cita larga y cita corta</h1>
-<h2>Cita corta</h2>
-<p>Al añadir &lt;q&gt; creas una cita corta.</p>
-<h2>Cita larga</h2>
-<p>Al añadir &lt;blockquote&gt; creas una cita larga ej: &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;.</p>
-<h2>Abreviaciones</h2>
-<p>Se necesita usar &lt;abbr&gt; para abreviar ej: &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</p>
-<h2>Direcciones</h2>
-<p>Se usa &lt;address&gt; para las direciones</p>
-<h2>Citar un elemento</h2>
-<p>Se usa &lt;cite&gt; para citar un elemeto (ponerlo en italicas).</p>
-<h2>Override bidireccional</h2>
-<p>Con &lt;bdo&gt; puedes escribor de izq a der ej: &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</p>
-<h1>Comentarios</h1>
-<p>Para añadir un comentario se usa "!--" despues de un "&lt;" y se cierra con "--" con "&gt;"</p>
-<h2>Comentarios condicionales</h2>
-<p>Los comentarios condicinados ej:&lt;!--[if IE 9]&gt;
-    .... some HTML here ....
-&lt;![endif]--&gt; </p>
-
+	<h1>¡Hola Mundo! :)</h1>
+	<h1>Introducción</h1>
+	<p>Todo en HTML jala con "tags" de este tipo: "<"tagname">"content goes here..."<"/tagname">"
+	siempre tiene un opening tag y un closing tag
+	</p>
+	<h1>!Doctype</h1>
+	<p>!Doctype le dice a tu navegador como mostrar las páginas correctamente. Así se declara: "<"!DOCTYPE html">"</p>
+	<h1>Editores</h1>
+	<p>Existen varios editores, pero cualquier editor de texto jala. Solo no olvides de ponerlo en un archivo .html</p>
+	<h1>Documentos HTML</h1>
+	<p>Todos los documentos HTML tinen que tener el "<"!DOCTYPE html">", empezar con "<"html">" y terminar con "<"/html">" y, por supuesto, su parte visible: "<"body">" ... "<"/body">"<p>
+	<h1>Headings</h1>
+	<p>Los Headings son tags de los titulos y van del "h1" al "h6" dependiendo de su importancia</p>
+	<h1>Parrafos</h1>
+	<p>Para declarar un parrafo se usa el tag "p"</p>
+	<h1>Ligas</h1>
+	<p>Para declarar una liga de usa el tag "a" seguido del atributo "href"</p>
+	<p>Puedes usar un link en imgenes, texto, etc... ej: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
+	<h1>Imágenes</h1>
+	<p>Para declarar una imagen se usa el tag "img" y puede tener los siguientes atributos: fuente "scr", texto alterno "alt, largo "width" y ancho "height"</p>
+	<h2>Sintaxis para declarar imágenes</h2>
+	<pre>
+	Para declarar una imagen HTML no se necesita un closing tag.
+	Pudes insertar imagen animadas y no animadas en tu documento.
+	Esta es la sintaxis: &lt;img src="url" alt="some_text" style="width:width;height:height;"&gt;
+	<img src="http://www.elwebmaster.com/wp-content/uploads/2015/07/HTML5_logo_and_wordmark.svg_.png" alt="imagen de HTML5" style="width: :500px; height: 500px">
+	</pre>
+	<h2>Mapa en un imagen</h2>
+	<pre>Ejemplo de como poner una imagen en un mapa: 
+	&lt;img src="planets.gif" alt="Planets" usemap="#planetmap" style="width:145px;height:126px;"&gt;
+		&lt;map name="planetmap"&gt;
+		&lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm"&gt;
+		&lt;area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"&gt;
+		&lt;area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"&gt;
+	&lt;/map&gt;</pre>
+	<h1>Elementos de HTML</h1>
+	<p>HTML tiene varios elementos como "html" el cual define el tipo de documento y se tiene que cerrar, "body" define lo que tendra el documento y se tiene que cerrar, y hay elementos de tipo "content" que los que contendra el documento, estos ultimo de como "p", "h2" y se tienen que cerrar.
+	Es muy importante cerrar estos tags.
+	Hay ciertos tipos de tags llamados "empty" los cuales no tienen contenido y no se tienen que cerrar el como el break("br"). A HTML le vale que uses mayúsculas, pero es mejor no usarlas.
+	</p>
+	<h1>Atributos</h1>
+	<p>HTML puede tener atributos los cuales añaden información adicional sobre un elemento.
+	Los at ributos siempre se especifican el los tags de inicio</p>
+	<h1>Atributos</h1>
+	<p>Los elementos de HTML pueden atributos, los cuales añaden informacion adicional al elemento. Los atributos simepre se especifican en el start tag. Los atributos se declacan de la suiguiente manera: name="value".</p>
+	<p>Ejemplos de atributos:</p>
+	<ul>
+		<li>lang: es el idioma ej: &lt;html lang="en-US"&gt; </li>
+		<li>title: sale como tooltip cuando pasas el mouse como parrafo ej: &lt;p title="I'm a tooltip"&gt;.</li>
+		<li>href: es la referencia hacia un link ej: &lt;a href="https://www.w3schools.com"&gt;</li>
+		<li>src: es para la fuente de un imagen</li>
+		<li>width: es para el ancho de una imagen</li>
+		<li>height: es para le largo imagen</li>
+		<li>Ej: &lt;img src="w3schools.jpg" width="104" height="142" &gt; </li>
+		<li>para el ancho y el largo la medida el en pixeles</li>
+		<li>alt: es la descripción de la imagen, además se muestra en caso de que la imagen mo se pueda mostrar este texto aparecera ej: &lt;img src="w3schools.jpg" alt="W3Schools.com" width="104" height="142"&dt;</li>
+		<li>alt	Specifies an alternative text for an image, when the image cannot be displayed
+		disabled	Specifies that an input element should be disabled
+		href	Specifies the URL (web address) for a link
+		id	Specifies a unique id for an element
+		src	Specifies the URL (web address) for an image
+		style	Specifies an inline CSS style for an element
+		title	Specifies extra information about an element (displayed as a tool tip)</li>
+	</ul>
+	<h1>Headings</h1>
+	<h2>Horizontal Rules</h2>
+	<p>hr: es un break tematico ej: &lt;hr&gt;</p>
+	<p>head: es para contener metadata se usa como &lt;head&gt;. en el usualmente se define el titulo del documento, le tipo de los caracteres, los coleres entre otras cosas</p>
+	<h1>Parrafos</h1>
+	<h2>El elemento pre</h2>
+	<pre>
+	Es el elemento preformateado.
+	Esta hecho para conservar espacios y saltos de linea.
+	</pre>
+	<h1>Cita larga y cita corta</h1>
+	<h2>Cita corta</h2>
+	<p>Al añadir &lt;q&gt; creas una cita corta.</p>
+	<h2>Cita larga</h2>
+	<p>Al añadir &lt;blockquote&gt; creas una cita larga ej: &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;.</p>
+	<h2>Abreviaciones</h2>
+	<p>Se necesita usar &lt;abbr&gt; para abreviar ej: &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt;</p>
+	<h2>Direcciones</h2>
+	<p>Se usa &lt;address&gt; para las direciones</p>
+	<h2>Citar un elemento</h2>
+	<p>Se usa &lt;cite&gt; para citar un elemeto (ponerlo en italicas).</p>
+	<h2>Override bidireccional</h2>
+	<p>Con &lt;bdo&gt; puedes escribor de izq a der ej: &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;</p>
+	<h1>Comentarios</h1>
+	<p>Para añadir un comentario se usa "!--" despues de un "&lt;" y se cierra con "--" con "&gt;"</p>
+	<h2>Comentarios condicionales</h2>
+	<p>Los comentarios condicinados ej:&lt;!--[if IE 9]&gt;
+    	.... some HTML here ....
+	&lt;![endif]--&gt; </p>
+	<h2>Atributo Target</h1>
+	<p>Con el atributo target, le especificas al documento como queres que se abran los links</p>
+	<ul>
+		<li>_blank: abre la liga en una nueva ventana</li>
+		<li>_self: abre la liga en la misma venatana (esta es la ventana que viene por default)</li>
+		<li>_parent: abre la liga en una parent frame </li>
+		<li>_top: abre la lia en una ventana completa</li>
+		<li>framename: abre la liga en la frame nombrada</li>
+		<li>Ej:&lt;a href="https://www.w3schools.com/" target="_blank"&gt;Visit W3Schools!&lt;/a&gt;
+		<li>Ejemplo de como ponerle una liga a una imagen: &lt;a href="default.asp"&gt;
+  	&lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&gt;
+	&lt;/a&gt;</li>
+	</ul>
+	<h2>Bookmark</h2>
+	<p>Los bookmark se usan para saltar a una parte especifica de un documento ej: se añade la bookmark &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt; y luego se le añade la liga &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</p>
+	<p>Ejemplo de como usar una liga con un path &lt;a href="https://www.w3schools.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;</p>
+	<h1>Tablas</h1>
+	<h2>Definir una tabla</h2>
+	<pre>
+	Para definir una tabal se usa el tag "table" y se tiene que cerrar.
+	Cada renglon se define ocon el tag "tr" y se tiene que cerrar.
+	Cada celda se define con el tag "td" y se tiene que cerrar, puede con tener imagenes, texto, otra tabla, etc...
+	Existen los siguientes tags:
+	colspan: se usa para declara una celda que ocupa mas de una columna
+	rowspan: se usa para declarar una celda que ocupa mas de una renglón
+	Se usa el tag "caption" para añadir un titulo a la tabla
+	</pre>
+	<h1>Listas</h1>
+	<h2>Lista desordenada</h2>
+	<p>La lista desordena se crea usando el tag "ul" y cada elemento de la lista se crea usando el tag "li"</p>
+	<h2>Lista ordenada</h2>
+	<p> La lista ordenada se crea con el tal "ol" y cada elemento de  la lita se crea usnado el tag "li" (la lista ordenada le añade numeros a los elementos)</p>
 </body>
 </html>
