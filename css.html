@@ -3,6 +3,7 @@
 <html>
 <head>
 	<title>CSS</title>
+	<meta charset="utf-8">
 </head>
 <body>
 <h1>CSS</h1>
@@ -344,7 +345,308 @@
 	div.ex4 {
 	    padding: 25px;
 	}
-	</pre>
-	
+</pre>
+<h2>Alto y ancho</h2>
+<pre>
+	Con height y width le das tamaña al elemento (ya viene una propoción por omisión)
+	div {
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+	}
+	con max-height y max-width le dices al elemento cual será su máximo tamaño.
+</pre>	
+<h2>Modelo Box</h2>
+<pre>
+	En HTML un elemento se puede considerar como cajas:
+	Consiste de las siguientes partes:
+	<ul>
+		<li>Content: Es el contenido del elemento (donde las imágenes y el texot aparecen</li>
+		<li>Padding: Crea un espacio transparente al rededor del contenido</li>
+		<li>Border: Un borde que va al rededor del padding y el content</li>
+		<li>Margin: Crea un area afuera del borde</li>
+	</ul>
+	<img src="boxmodel-image.png">
+	Ej:
+	div {
+    width: 300px;
+    border: 25px solid green;
+    padding: 25px;
+    margin: 25px;
+	}
+	Para calcular la anchura de un elemento se usa la siguiente formula:
+	Ancho total de un elemento = width + left padding + right padding + left border + right border + left margin + right margin
+	Y para la altua de un elemento:
+	Altura total de un elemento = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin
+</pre>
+<h2>Outline</h2>
+<pre>
+	Outline es una linea afuera del borde de un elemento (se usa para resaltar un elemento de los demás).
+	outline-stlye es la propiedad que especifica el estilo que va a llevar el outline.
+	Valores posibles:
+	<ul>
+		<li>dotted - Defines a dotted outline</li>
+		<li>dashed - Defines a dashed outline</li>
+		<li>solid - Defines a solid outline</li>
+		<li>double - Defines a double outline</li>
+		<li>groove - Defines a 3D grooved outline. The effect depends on the outline-color value</li>
+		<li>ridge - Defines a 3D ridged outline. The effect depends on the outline-color value</li>
+		<li>inset - Defines a 3D inset outline. The effect depends on the outline-color value</li>
+		<li>outset - Defines a 3D outset outline. The effect depends on the outline-color value</li>
+		<li>none - Defines no outline</li>
+		<li>hidden - Defines a hidden outline</li>
+	</ul>
+	Ej:
+	p {
+    border: 1px solid black;
+    outline-color: red;
+	}
+
+	p.dotted {outline-style: dotted;}
+	p.dashed {outline-style: dashed;}
+	p.solid {outline-style: solid;}
+	p.double {outline-style: double;}
+	p.groove {outline-style: groove;}
+	p.ridge {outline-style: ridge;}
+	p.inset {outline-style: inset;}
+	p.outset {outline-style: outset;}
+
+	Para las siguientes propiedades se necisita declarar primero la propiedad outline-style.
+	outline-color ej:
+	p {
+    border: 1px solid black;
+    outline-style: double;
+    outline-color: red;
+	}
+
+	outline-width ej:
+	p {border: 1px solid black;}
+
+	p.one {
+	    outline-style: double;
+	    outline-color: red;
+	    outline-width: thick;
+	}
+
+	p.two {
+	    outline-style: double;
+	    outline-color: green;
+	    outline-width: 3px;
+	}
+
+	Outline tiene Shorthand property
+	Ej:
+	p {
+    border: 1px solid black;
+    outline: 5px dotted red;
+	}
+</pre>
+<h2>Texto</h2>
+<h3>Color</h3>
+<pre>
+	Con la propiedad color le das color al texto ej:
+	body {
+    color: blue;
+	}
+
+	h1 {
+	    color: green;
+	}
+</pre>
+<h3>Text Alignment</h3>
+<pre>
+	Con la propiedad text-align alineas horizonatalmente el texto.
+	Valores posibles: right, left, centered, justified ej:
+	h1 {
+    text-align: center;
+	}
+
+	h2 {
+	    text-align: left;
+	}
+
+	h3 {
+	    text-align: right;
+	}
+</pre>
+<h3>Text decoration</h3>
+<pre>
+	Con la propiedad text-decoration se usa para quitar o pones docoraciones en el texto.
+	Valores posibles: none(le quitas la decoración al texto), overline, line-through, underline.
+	Ej:
+	h1 {
+    text-decoration: overline;
+	}
+
+	h2 {
+	    text-decoration: line-through;
+	}
+
+	h3 {
+	    text-decoration: underline;
+	}
+</pre>
+<h3>Text transformation</h3>
+<pre>
+	Con la propiedad text-transform le dices al texto como se va a mostrar.
+	Valores posible: uppercase, lowercase, capitalize.
+	Ej:
+	p.uppercase {
+    text-transform: uppercase;
+	}
+
+	p.lowercase {
+	    text-transform: lowercase;
+	}
+
+	p.capitalize {
+	    text-transform: capitalize;
+	}
+</pre>
+<h3>Text indentation</h3>
+<pre>
+	Con la propiedad text-indent marcas la sangría del texto.
+	Ej:
+	p {
+    text-indent: 50px;
+	}
+</pre>
+<h3>Letter spacing</h3>
+<pre>
+	Con la propiedad letter-spacing defines el espacio entre los carácteres.
+	Ej:
+	h1 {
+    letter-spacing: 3px;
+	}
+
+	h2 {
+	    letter-spacing: -3px;
+	}
+</pre>
+<h3>Line Height</h3>
+<pre>
+	Con la propiedad line-height le defines el espacio entre las lineas.
+	Ej:
+	p.small {
+    line-height: 0.8;
+	}
+
+	p.big {
+	    line-height: 1.8;
+	}
+</pre>
+<h3>Text direction</h3>
+<pre>
+	Con la propiedad direction defines la direccion del texto.
+	Ej:
+	div {
+    direction: rtl;
+	}
+	(rtl significa rigth to left)
+</pre>
+<h3>Word Spacing</h3>
+<pre>
+	Con el word-spacing defines el epacio entre las palabras.
+	Ej:
+	h1 {
+    word-spacing: 10px;
+	}
+
+	h2 {
+	    word-spacing: -5px;
+	}
+</pre>
+<h2>Fuentes</h2>
+<h3>Font Family</h3>
+<pre>
+	p {
+    font-family: "Times New Roman", Times, serif;
+	}
+</pre>
+<h3>Font Style</h3>
+<pre>
+	Con la propiedad font-style decides si va en italicas o no.
+	Valores posibles: normal, italic, oblique
+	Ej:
+	p.normal {
+    font-style: normal;
+	}
+
+	p.italic {
+	    font-style: italic;
+	}
+
+	p.oblique {
+	    font-style: oblique;
+	}
+</pre>
+<h3>Font size</h3>
+<pre>
+	Con el parametro font-size defines el tamaño del texto.
+	Ej:
+	h1 {
+    font-size: 40px;
+	}
+
+	h2 {
+	    font-size: 30px;
+	}
+
+	p {
+	    font-size: 14px;
+	}
+
+	puedes usar pixeles(px) o em (Nota: 16px = 1em).
+</pre>
+<h3>Font Weight</h3>
+<pre>
+	Tribial
+	ej:
+	p.normal {
+    font-weight: normal;
+	}
+
+	p.thick {
+	    font-weight: bold;
+	}
+</pre>
+<h3>Font Variant</h3>
+<pre>
+	p.normal {
+    font-variant: normal;
+	}
+
+	p.small {
+	    font-variant: small-caps;
+	}
+</pre>
+<h2>Icons</h2>
+<pre>
+	Para añadir solo necesitas pegar esto despues del tag head: &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"&gt;
+	Para ver más iconos: <a href="https://www.w3schools.com/icons/default.asp"></a>
+</pre>
+<h2>Posicionamiento</h2>
+<h3>Ejemplo de como posicionar una imagen en un texto.</h3>
+<pre>
+	.container {
+    position: relative;
+	}
+
+	.center {
+	    position: absolute;
+	    left: 0;
+	    top: 50%;
+	    width: 100%;
+	    text-align: center;
+	    font-size: 18px;
+	}
+
+	img { 
+	    width: 100%;
+	    height: auto;
+	    opacity: 0.3;
+	}
+</pre>
+
 </body>
 </html>
