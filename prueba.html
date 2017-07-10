@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="prueba.css">
-<title>Mi Guia HTML</title>
+<link rel="stylesheet" type="text/css" href="html2.css">
+<title>Mi guia HTML</title>
 <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 	<header>
-		<h1 id="guia">Mi guía de HTML</h1>
-		<ul id="ind">
-			<li class="indice">Indice</li>
-			<li class="indice">Pág. Principal</li>
-			<li class="indice">Contacto</li>
-		</ul>
+		<img class="logo" src="html.png" style="width:75px;height:75px;">
+		<h1 id="titulo">Mi guía de HTML</h1>
 	</header>
+	<ul class="barraH">
+		<li class="barraH">Inicio</li>
+		<li class="barraH">Acerca de</li>
+		<li class="barraH">Contacto</li>
+		<li class="barraH indice">Indice</li>
+	</ul>
 	<div class="row">
-		<div class="col-3 col-s-3 menuList">
-			<ul id="barraVert">
-				<li class="barra">Introducción</li>
-				<li class="barra">Elementos de HTML</li>
-				<li class="barra">Atributos</li>
-				<li class="barra">Headings</li>
-				<li class="barra">Parrafos</li>
-				<li class="barra">Ligas</li>
-				<li class="barra">Imágenes</li>
-				<li class="barra">Elementos de HTML</li>
-				<li class="barra">Headings</li>
-				<li class="barra">Parrafos</li>
-				<li class="barra">Comentarios</li>
-				<li class="barra">Tablas</li>
-				<li class="barra">Niveles de bloque</li>
-				<li class="barra">Atributo clase</li>
-				<li class="barra">Iframe</li>
-				<li class="barra">Camino de un archivo</li>
-				<li class="barra">Elementos de Head</li>
-				<li class="barra">Computer code</li>
-				<li class="barra">Entities</li>
-				<li class="barra">Forms</li>
+		<div class="col-3 col-s-3 barraV">
+			<ul class="menuList barraV">
+				<li class="barraV">Introducción</li>
+				<li class="barraV">Elementos de HTML</li>
+				<li class="barraV">Atributos</li>
+				<li class="barraV">Headings</li>
+				<li class="barraV">Parrafos</li>
+				<li class="barraV">Ligas</li>
+				<li class="barraV">Imágenes</li>
+				<li class="barraV">Elementos de HTML</li>
+				<li class="barraV">Headings</li>
+				<li class="barraV">Parrafos</li>
+				<li class="barraV">Comentarios</li>
+				<li class="barraV">Tablas</li>
+				<li class="barraV">Niveles de bloque</li>
+				<li class="barraV">Atributo clase</li>
+				<li class="barraV">Iframe</li>
+				<li class="barraV">Camino de un archivo</li>
+				<li class="barraV">Elementos de Head</li>
+				<li class="barraV">Computer code</li>
+				<li class="barraV">Entities</li>
+				<li class="barraV">Forms</li>
 			</ul>
 		</div>
-		<div class="col-6 col-s-9">
+		<div class="col-6 col-s-9 contenido">
+			<img class="howTo" src="How to HTML.png" style="width: 815px; height: 486px;">
+			<div class="cont1">
 			<h2>Introducción</h2>
 			<p>Todo en HTML jala con &lt;tags&gt; de este tipo: &lt;tagname&gt;content goes here...&lt;/tagname&gt;
 			siempre tiene un opening tag y un closing tag
@@ -84,6 +88,8 @@
 			<p>Para declarar una liga de usa el tag "a" seguido del atributo "href"</p>
 			<p>Puedes usar un link en imgenes, texto, etc... ej: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
 			<a href="https://www.itam.mx">ITAM</a>
+			</div>
+			<div class="cont2">
 			<h2>Imágenes</h2>
 			<p>Para declarar una imagen se usa el tag "img" y puede tener los siguientes atributos: fuente "scr", texto alterno "alt, largo "width" y ancho "height"</p>
 			<h3>Sintaxis para declarar imágenes</h3>
@@ -103,6 +109,8 @@ Ejemplo de como poner una imagen en un mapa:
 	&lt;area shape="circle" coords="90,58,3" alt="Mercury" href="mercur.htm"&gt;
 	&lt;area shape="circle" coords="124,58,8" alt="Venus" href="venus.htm"&gt;
 &lt;/map&gt;</pre>
+			</div>
+			<div class="cont1">
 			<h2>Headings 2</h2>
 			<h3>Horizontal Rules</h3>
 			<p>hr: es un break tematico ej: &lt;hr&gt;</p>
@@ -183,6 +191,8 @@ Se usa el tag "caption" para añadir un titulo a la tabla
 El tag "div" se usa como contenedor de elementos HTML.
 El tag "span" se usa como contenerdor de texto.
 			</pre>
+			</div>
+			<div class="cont2">
 			<h2>Atributo clase</h2>
 			<pre>
 Ejemplo de como declarar varios elementos de la misma clase:
@@ -245,6 +255,8 @@ Ej: &lt;meta http-equiv="refresh" content="30"&gt;.
 			<h2>Computer code</h2>
 			<p>El tag "code" sirve para escribir codigo</p>
 			<p>El tag "var" irve para definir variables</p>
+			</div>
+			<div class="cont1">
 			<h2>Caracteres especiales</h2>
 			<h3>Entidades</h3>
 			<p>
@@ -585,6 +597,8 @@ Ej: &lt;meta http-equiv="refresh" content="30"&gt;.
 			<td>BLACK DIAMOND SUIT</td>
 			</tr>     
 			</table></p>
+			</div>
+			<div class="cont2">
 			<h2>Forms</h2>
 			<pre>
 Las forms se usan para recaudar info del usuario.
@@ -697,15 +711,8 @@ and the following attributes for &lt;form&gt;:
 autocomplete
 novalidate
 			</pre>
+			</div>
 		</div>
-		<div class="col-3 col-s-12 publicidad">
-			<p>
-			Publicidad de la buena
-			</p>
-		</div>
-	</div>
-	<div class="footer">
-  		<p>Página creada por JPaulVI</p>
 	</div>
 </body>
 </html>
