@@ -7,6 +7,7 @@
 	background-color: rgb(255,140,40);
 	border-radius: 10px;
 }
+
 .Res{
 	text-align: center;
 	margin: 0px;
@@ -16,20 +17,27 @@
 }
 
 img{
-	width: 90%;
-	height: 90%;
+	width: 75%;
+	height: 75%;
+	float: left;
 }
+
 .rand{
 	background-color: rgb(14, 169, 214);
 	height: 100px;
-	width: 80px;
+	width: 100px;
 	margin: 0px;
 	padding: 10px;
 	float: left;
 	border-radius: 10px;
-
 }
-p{
+
+p.p{
 	margin: 0px;
 	padding: 0px;
+	bottom: 0px;
+}
+
+.bot{
+	float: right;
 }
